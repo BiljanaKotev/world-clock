@@ -1,3 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f46749;
+}
+
+.main-container {
+  background-color: #ebb866;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 5px;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header-container {
+  text-align: center;
+}
+.select-element {
+  padding: 5px 150px 5px 0;
+  font-size: 14px;
+  border-radius: 3px;
+  width: 90%;
+  border: 2px solid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.city-container {
+  margin-top: 30px;
+  margin-left: 28px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+date {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+time {
+  font-size: 22px;
+}
 h1,
 footer {
   text-align: center;
