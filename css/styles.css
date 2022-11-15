@@ -49,6 +49,10 @@ time {
   font-size: 22px;
 }
 
+.time-reference {
+  font-size: 1px;
+}
+
 .select-element,
 footer {
   font-size: 14px;
