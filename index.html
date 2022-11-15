@@ -21,32 +21,34 @@
         <h1>World Clock</h1>
         <select class="select-element" id="select-element">
           <option value="">Select a City</option>
-          <option value="">London</option>
-          <option value="">Athens</option>
-          <option value="">Ohrid</option>
-          <option value="">Istanbul</option>
+          <option value="event.target.value">London</option>
+          <option value="event.target.value">Athens</option>
+          <option value="event.target.value">Ohrid</option>
+          <option value="event.target.value">Istanbul</option>
         </select>
       </header>
       <div class="city-container">
         <div class="city-heading" id="london">
           <h3>London</h3>
-          <div><date class="date" id="city-date-1">Mon Nov 14 2022</date></div>
+          <div><date class="date" id="city-date-1"></date></div>
         </div>
         <div>
-          <time class="time" id="city-time-1"
-            >12:40:22
-            <small class="time-reference" id="time-reference">p.m</small></time
-          >
+          <time class="time" id="city-time-1"></time>
+          <div class="time-reference-container">
+            <small class="time-reference" id="time-reference">p.m</small>
+          </div>
         </div>
       </div>
       <div class="city-container">
         <div>
-          <h3 class="city-heading">Sydney</h3>
-          <div><date class="date" id="city-date-2">Mon Nov 14 2022</date></div>
+          <h3 class="city-heading" id="sydney">Sydney</h3>
+          <div><date class="date" id="city-date-2"></date></div>
         </div>
         <div>
-          <time class="time" id="city-time-2">12:40:22</time>
-          <div><small class="time-reference">p.m</small></div>
+          <time class="time" id="city-time-2"></time>
+          <div class="time-reference-container">
+            <small class="time-reference" id="time-reference">p.m</small>
+          </div>
         </div>
       </div>
     </main>

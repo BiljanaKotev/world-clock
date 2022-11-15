@@ -49,8 +49,11 @@ time {
   font-size: 22px;
 }
 
+.time-reference-container {
+  display: inline-block;
+}
 .time-reference {
-  font-size: 1px;
+  font-size: 12px;
 }
 
 .select-element,

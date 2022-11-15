@@ -1,14 +1,25 @@
-// function selectCity() {
-//   alert("hello");
+// function dropDownCity(event) {
+//   if (event.target.value.length > 0) {
+
+//   }
 // }
 
-// let selectDropDown = document.getElementById("#select-element");
-// selectDropDown.eventAddListener("change", selectCity);
+// let selectElement = document.querySelector("#select-element");
+// selectElement.addEventListener("change", dropDownCity);
 
-let dateElement = document.getElementsByClassName("date");
-dateElement[0].innerHTML = moment().format("ddd MMM Do YY");
-dateElement[1].innerHTML = moment().format("ddd MMM Do YY");
+function updateTimeInterval() {
+  let dateElement = document.getElementsByClassName("date");
+  dateElement[0].innerHTML = moment.tz("Europe/London").format("ddd MMM Do YY");
+  dateElement[1].innerHTML = moment
+    .tz("Australia/Sydney")
+    .format("ddd MMM Do YY");
 
-let timeElement = document.getElementsByClassName("time");
-timeElement[0].innerHTML = moment().format("hh:mm:ss a");
-timeElement[1].innerHTML = moment().format("hh:mm:ss a");
+  let timeElement = document.getElementsByClassName("time");
+  timeElement[0].innerHTML = moment.tz("Europe/London").format("hh:mm:ss");
+  timeElement[1].innerHTML = moment.tz("Australia/Sydney").format("hh:mm:ss");
+
+  let timeReference = document.getElementsByClassName("time-reference");
+  timeReference[0].innerHTML = moment().format("a");
+  timeReference[1].innerHTML = moment().format("a");
+}
+setInterval(updateTimeInterval, 1000);
