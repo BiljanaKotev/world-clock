@@ -23,3 +23,11 @@ function updateTimeInterval() {
   timeReference[1].innerHTML = moment().format("a");
 }
 setInterval(updateTimeInterval, 1000);
+
+function dropDownCity(event) {
+  let timeZone = event.target.value;
+  let cityTime = moment().tz(timeZone);
+}
+
+let dropDownSelect = document.querySelector("#select-element");
+dropDownSelect.addEventListener("change", dropDownCity);
