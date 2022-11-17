@@ -22,6 +22,9 @@ setInterval(updateTimeInterval, 1000);
 
 function dropDownCity(event) {
   let timeZone = event.target.value;
+  if (timeZone === "current") {
+    timeZone = moment.tz.guess();
+  }
   let cityTimeZone = moment().tz(timeZone);
   let cityName = timeZone.replace("_", " ").split("/")[1];
   let timeReference = moment().tz(timeZone).format("a");
