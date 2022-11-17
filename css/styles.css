@@ -6,6 +6,10 @@
   color: #bab7b7;
 }
 
+.heading-link {
+  text-decoration: none;
+}
+
 .main-container,
 .select-element {
   border-radius: 3px;
