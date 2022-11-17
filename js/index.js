@@ -26,7 +26,9 @@ function dropDownCity(event) {
   let cityName = timeZone.replace("_", " ").split("/")[1];
   let timeReference = moment().tz(timeZone).format("a");
   let citiesContainer = document.querySelector("#cities-container");
-  citiesContainer.innerHTML = ` <div class="city-container">
+  citiesContainer.innerHTML = ` 
+  <div id="cities-container">
+  <div class="city-container">
             <div class="city-heading">
                <h3>${cityName}</h3>
                <div><date class="date">${cityTimeZone.format(
@@ -39,7 +41,7 @@ function dropDownCity(event) {
                <small class="time-reference">${timeReference}</small>
               </div>
             </div>
-          </div>`;
+          </div></div>`;
 }
 
 let dropDownSelect = document.querySelector("#select-element");
